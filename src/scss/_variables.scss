@@ -1,0 +1,17 @@
+$scissors-gradient: hsl(39, 89%, 49%);
+$paper-gradient: hsl(230, 89%, 62%);
+$rock-gradient: hsl(349, 71%, 52%);
+$lizard-gradient: hsl(261, 73%, 60%) to hsl(261, 72%, 63%);
+$cyan: hsl(189, 59%, 53%) to hsl(189, 58%, 57%);
+$dark-text: hsl(229, 25%, 31%);
+$score-text: hsl(229, 64%, 46%);
+$header-outline: hsl(217, 16%, 45%);
+$background-gradient: radial-gradient(
+  circle,
+  hsl(314, 27%, 43%),
+  hsl(237, 49%, 15%)
+);
+
+$imgP: "../images/icon-paper.svg";
+$imgR: "../images/icon-rock.svg";
+$imgS: "../images/icon-scissors.svg";

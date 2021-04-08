@@ -1,0 +1,23 @@
+.footer{
+    width: 100vw;
+    .attribution{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: 1rem;
+    }
+
+    button{
+        position: absolute;
+        bottom: 1rem;
+        padding: 7px 25px;
+        right: 1rem;
+        border-radius: .5rem;
+        border: 3px solid $header-outline;
+        outline: none;
+        cursor: pointer;
+        color: $header-outline;
+        background: none;
+        font-weight: 600;
+    }
+}
