@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
 import GamePlay from "./components/GamePlay";
 import Playing from "./components/Playing";
@@ -14,15 +14,17 @@ function App() {
   return (
     <>
       <div className="container">
-        <Header score={userScore}/>
+        <Header score={userScore} />
         <Switch>
-          <Route exact path="/">
-            <Playing setUserChoice={setUserChoice}/>
+          <Route path="/rock-paper-scissor">
+            <Playing setUserChoice={setUserChoice} />
           </Route>
           <Route exact path="/game">
-            <GamePlay userChoice={userChoice}
-             userScore={userScore} 
-             setUserScore={setUserScore}/>
+            <GamePlay
+              userChoice={userChoice}
+              userScore={userScore}
+              setUserScore={setUserScore}
+            />
           </Route>
         </Switch>
       </div>

@@ -51,7 +51,7 @@ const GamePlay = ({ userChoice, userScore, setUserScore }) => {
         <div className="result__play">
           <div className="text">You Win</div>
           <Link
-            to="/"
+            to="/rock-paper-scissor"
             exact
             className="play-again"
             onClick={() => setBotChoice()}
@@ -63,7 +63,11 @@ const GamePlay = ({ userChoice, userScore, setUserScore }) => {
       {winner === "Lose" && (
         <div className="result__play">
           <div className="text">You Loose</div>
-          <Link to="/" className="play-again" onClick={() => setBotChoice()}>
+          <Link
+            to="/rock-paper-scissor"
+            className="play-again"
+            onClick={() => setBotChoice()}
+          >
             Play Again
           </Link>
         </div>
@@ -71,7 +75,11 @@ const GamePlay = ({ userChoice, userScore, setUserScore }) => {
       {winner === "Draw" && (
         <div className="result__play">
           <div className="text">Draw</div>
-          <Link to="/" className="play-again" onClick={() => setBotChoice()}>
+          <Link
+            to="/rock-paper-scissor"
+            className="play-again"
+            onClick={() => setBotChoice()}
+          >
             Play Again
           </Link>
         </div>
